@@ -1,0 +1,22 @@
+databases:
+  - name: Instagram_DB
+    databaseName: instagram_db_kcej
+    user: instagram
+    region: singapore
+
+services:
+  - type: web
+    name: instagram
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: Instagram_DB
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+
