@@ -1,48 +1,32 @@
-<div class="sign_up">
-<div class="sign_up_box">
-<div class="title_area">
-  <div class="title">Sing up</div>
-</div>
-
-<div class="field_area">
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "users/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.text_field :name, autofocus: true, class:"field_input",:placeholder=>"user name"%>
+<div class = "sign_up">
+  <div class = "sign_up_box">
+    <div class = "title_area">
+      <div class = "title">新規登録</div>
+    </div>
+    <div class = "field_area">
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "users/shared/error_messages", resource: resource %>
+    <div class="field">
+      <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "field_input", :placeholder => "ユーザーネーム" %>
+    </div>
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "field_input", :placeholder => "Eメールアドレス" %>
+    </div>
+    <div class="field">
+      <% if @minimum_password_length %>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password",class: "field_input", :placeholder => "新しいパスワード" %>
+    </div>
+    <div class="field">
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "field_input", :placeholder => "新しいパスワード(確認)" %>
+    </div>
+    </div>
+    <div class="submit">
+      <div class="actions">
+        <%= f.submit "登録",class:"submit_button" %>
+      </div>
+    </div>
+    <% end %>
+    <%= render "users/shared/links" %>
   </div>
-  
-  <div class="field">
-    <%= f.label :image %>
-    <%= f.file_field :image %>
-  </div>
-  
-  <div class="field">
-    <%= f.email_field :email, autofocus: true, autocomplete: "email",class:"field_input",:placeholder=>"email"%>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" ,class:"field_input",:placeholder=>"password"%>
-  </div>
-
-  <div class="field">
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" ,class:"field_input",:placeholder=>"password_confimation"%>
-  </div>
-  </div>
-
-<div class="submit_area">
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-</div>
-
-<%= render "users/shared/links" %>
-</div>
 </div>

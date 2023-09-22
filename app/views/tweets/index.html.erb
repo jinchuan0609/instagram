@@ -4,11 +4,11 @@
 <%= link_to '評価の高い順', tweets_path(overall_count: "true") %>
 <%= link_to "いいねの多い順", tweets_path(sort: 'like DESC') %>
 
-<div class="tweets-container">
-
 <% if user_signed_in? %>
   <%= link_to "マイページへ", user_path(current_user.id) %>
 <% end %>
+
+<div class="tweets-container">
 
   <% @tweets.each do |t| %>
     <div class="tweet">
