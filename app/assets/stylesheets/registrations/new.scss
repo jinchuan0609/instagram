@@ -1,0 +1,80 @@
+/* サインアップフォームのスタイル */
+.sign_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .sign_up_box {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+  }
+  
+  /* タイトルのスタイル */
+  .title_area {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* フォームフィールドのスタイル */
+  .field_area {
+    margin-bottom: 20px;
+  }
+  
+  .field {
+    margin-bottom: 10px;
+  }
+  
+  .field_input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  /* サブミットボタンのスタイル */
+  .submit {
+    text-align: center;
+  }
+  
+  .submit_button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit_button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* リンクのスタイル */
+  .links {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .links a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  

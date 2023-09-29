@@ -1,0 +1,88 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* ヘッダースタイル */
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* フォームのスタイル */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .field {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  .field:last-child {
+    margin-bottom: 10px;
+  }
+  
+  /* アクションボタンのスタイル */
+  .actions {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* 削除ボタンのスタイル */
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  div > form.delete-account {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* リンクのスタイル */
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

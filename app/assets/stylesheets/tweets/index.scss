@@ -1,0 +1,93 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* ナビゲーションメニューのスタイル */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+  }
+  
+  /* ページヘッダーのスタイル */
+  h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  /* 投稿コンテナのスタイル */
+  .tweets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  /* 投稿のスタイル */
+  .tweet {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.33% - 20px); /* グリッドスタイル */
+    box-sizing: border-box;
+  }
+  
+  .tweet_item {
+    margin-bottom: 10px;
+  }
+  
+  /* 画像のスタイル */
+  .image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  /* 評価のスタイル */
+  .star-rating {
+    display: inline-block;
+    font-size: 20px;
+  }
+  
+  .star-rating-front {
+    color: #ffcc00; /* 星の前景色（黄色） */
+    display: block;
+    width: 0; /* 評価に応じて幅が変化 */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .star-rating-back {
+    color: #ccc; /* 星の背景色（グレー） */
+  }
+  
+  /* ハートアイコンのスタイル */
+  .fa-heart {
+    color: #ff0000;
+  }
+  
+  /* リンクのスタイル */
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
